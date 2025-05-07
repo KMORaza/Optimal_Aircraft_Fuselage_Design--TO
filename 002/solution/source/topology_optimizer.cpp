@@ -127,7 +127,7 @@ void TopologyOptimizer::updateDensities() {
         }
     }
 
-    // Simplified density filter
+    // Density filter
     std::vector<double> density_filtered = density_;
     for (size_t e = 0; e < density_.size(); ++e) {
         density_[e] = std::max(0.1, std::min(1.0, density_filtered[e]));
