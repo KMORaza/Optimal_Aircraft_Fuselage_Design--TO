@@ -13,7 +13,7 @@
   * Applies Dirichlet boundary conditions (fixed ends of the cylinder).
   * Solves the linear system using Eigen’s `SimplicialLDLT` solver.
   * Computes outputs like compliance, maximum stress (von Mises based on analytical hoop and longitudinal stresses), buckling factor (simplified panel buckling), fatigue life (S-N curve-based), and maximum deflection.
-* Topology Optimization :—
+* Topology Optimization (TO) :—
   * Uses a density-based topology optimization approach (SIMP) with element-wise densities variables.
   * Optimizes for minimum compliance subject to a volume fraction constraint.
   * Applies stress and buckling constraints via penalties in the sensitivity analysis.
