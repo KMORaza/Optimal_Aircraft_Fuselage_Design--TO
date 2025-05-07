@@ -6,7 +6,7 @@
 #include <iostream>
 
 int main() {
-    // Define fuselage parameters
+    // Fuselage parameters
     double radius = 2.0; // meters
     double length = 10.0; // meters
     double skin_thickness = 0.004; // 4 mm initial
@@ -18,14 +18,14 @@ int main() {
     double ultimate_load_factor = 1.5 * limit_load_factor; // Ultimate load factor
     double max_deflection = 0.001 * length; // 0.1% of length
     double min_thickness = 0.004; // 4 mm manufacturing constraint
-    double temp_min = -50.0; // °C at cruise
-    double temp_max = 50.0; // °C on ground
+    double temp_min = -50.0; // Â°C at cruise
+    double temp_max = 50.0; // Â°C on ground
     double damping_factor = 0.02; // Vibration damping
     int fatigue_cycles = 50000; // Pressurization cycles
 
     // Material: Aluminum 2024-T3
     Material aluminum("Aluminum 2024-T3", 2.7e3, 73e9, 0.33, 345e6, 280e6, 1.2e-5, 1e7);
-    // Material: CFRP (simplified anisotropic)
+    // Material: CFRP 
     Material cfrp("CFRP", 1.5e3, 150e9, 0.3, 600e6, 500e6, 0.5e-6, 2e7, true);
 
     // Initialize geometry
